@@ -1,0 +1,36 @@
+Exercise/Task!
+1. Buatlah perintah di console untuk mengambil elemen-elemen dibawah ini (Kerjakan dan gunakan file yang sudah saya kirim):
+   a. Semua elemen 'p'
+   b. teks 'X'
+   c. Jumlah "square" di dalam div "board"
+   d. teks "A game you know"
+
+2. Buatlah perintah di console untuk memodifikasi DOM dengan JS! (Kerjakan dan gunakan file yang sudah saya kirim):
+   a. Ubah nama pemain menjadi nama anda dan teman.
+   b. Tukar simbol pemain.
+   c. Ubah subtitle menjadi "A game you know and love"
+
+3. Deklarasikan & tetapkan variabel untuk mengingat:
+   a. Nama kalian
+   b. Gabungan antara usia kalian dan 3 orang teman lainnya.
+   c. Elemen #board dari file yang dikirim.
+
+4. Tampilkan poin-poin dibawah dari objek newJeans:
+   a. "Bunnies"
+   b. Objeknya kang Haerin
+   c. Album berjudul New Jeans.
+   d. "Minji"
+
+
+const newJeansMembers = [
+    {name: "Kim Minji", nickname: "Minji"},
+    {name: "Hanni Pham", nickname: "Hanni"},
+    {name: "Danielle Marsh", nickname: "Danielle"},
+    {name: "Kang Haerin", nickname: "Haerin"},
+    {name: "Lee Hyein", nickname: "Hyein"}
+];
+const newJeans = {
+    albums: ["OMG", "Get Up", "New Jeans"],
+    fans: "Bunnies",
+    members: newJeansMembers
+};
