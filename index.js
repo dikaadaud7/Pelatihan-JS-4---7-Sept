@@ -8,12 +8,12 @@
 let semuaP = document.querySelectorAll("p")
 let adaP = []
 for(i = 0; i<semuaP.length; i++){
-    adaP.push(semuaP[i].textContent)
+    adaP.push(semuaP[i].innerHTML)
 }
 console.log(`Semua p tag : ${adaP}`)
 
 //    b. teks 'X'
-let textX = document.getElementById("p1-symbol").textContent
+let textX = document.getElementById("p1-symbol").innerHTML
 console.log(`${textX}`);
 
 //    c. Jumlah "square" di dalam div "board"
@@ -25,7 +25,7 @@ for (j=0 ; j<=jumlahSquare.length -1; j++) {
 console.log(squareCount)
 
 //    d. teks "A game you know"
-let textAGame = document.querySelector('h2').textContent
+let textAGame = document.querySelector('h2').innerHTML
 console.log (`${textAGame}`)
 
 
@@ -36,25 +36,25 @@ console.log (`${textAGame}`)
 
 //    a. Ubah nama pemain menjadi nama anda dan teman.
 let changeNamep1 = document.getElementById("p1-name")
-changeNamep1.textContent = "Andika Daud"
+changeNamep1.innerHTML = "Andika Daud"
 
 let changeNamep2 = document.getElementById("p2-name")
-changeNamep2.textContent = "Aprisela"
+changeNamep2.innerHTML = "Aprisela"
 
 //    b. Tukar simbol pemain.
 
 let changeSymbol1 = document.getElementById("p1-symbol")
 let changeSymbol2 = document.getElementById("p2-symbol")
 
-var p1Symbol = changeSymbol1.textContent;
-var p2Symbol = changeSymbol2.textContent;
+var p1Symbol = changeSymbol1.innerHTML;
+var p2Symbol = changeSymbol2.innerHTML;
 
 if (p1Symbol === 'X' && p2Symbol === 'O') {
-    changeSymbol1.textContent = 'O';
-    changeSymbol2.textContent = 'X';
+    changeSymbol1.innerHTML = 'O';
+    changeSymbol2.innerHTML = 'X';
 } else if (p1Symbol === 'O' && p2Symbol === 'X') {
-    changeSymbol1.textContent = 'X';
-    changeSymbol2.textContent = 'O';
+    changeSymbol1.innerHTML = 'X';
+    changeSymbol2.innerHTML = 'O';
 }
 
 //    c. Ubah subtitle menjadi "A game you know and love"
