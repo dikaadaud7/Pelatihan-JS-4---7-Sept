@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz.js</title>
+    <style>
+        body {
+            margin: 1rem auto;
+            padding: 3rem;
+            font-family: sans-serif;
+        }
+        header {
+            width: 50%;
+            margin: 1em auto;
+        }
+        main {
+            min-width: 25rem;
+            max-width: 50%;
+            margin: 0px auto;
+            display:flex; 
+            flex-direction: column;
+        }
+        #statement {
+            border: 1px solid black;
+            border-radius: 0.5rem;
+            box-shadow: 5px 5px 5px gray;
+            padding: 1rem;
+            font-size: x-large;
+            text-align: center;
+            margin: 1rem 0px;
+            min-height: 2em;
+        }
+        #explanation {
+            padding: 1rem;
+            text-align: center;
+        }
+        #options {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            padding: 0.5rem;
+            font-size: medium;
+            border-radius: 5px;
+        }
+        .correct {
+            background-color: lightgreen;
+        }
+        .incorrect {
+            background-color: lightpink;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+    <h1>Quiz.js</h1>
+    <p>Do you know JS? Find out!</p>
+    </header>
+
+    <main>
+    <div id="statement">
+        
+    </div>
+
+    <div id="options">
+        <button name="true" value="true" >true</button>
+        <button name="false" value="false" >false</button>
+    </div>
+
+    <div id="explanation">
+
+    </div>
+
+    </main>
+
+  </body>
+
+  <script type="text/javascript" src="index2.js">
+
+
+    // TODO 1: Deklarasikan dan tetapkan variabel yang menunjuk ke elemen-elemen berikut ini
+        // 	a. div "statement"
+        // 	b. optionButtons; semua children daripada elemen div "options"
+        // 	c. div "explanation"
+
+
+    // TODO 2: Deklarasikan dan tetapkan variabel:
+	    // a. bernama "fact"
+	    // b. lalu tetapkan valuenya dengan sebuah objek yang berisi properti statement ("string"), answer (boolean), explanation ("string").
+	    // c. statement merupakan suatu pernyataan, answer harus true atau false, explanation merupakan penjelasan dari statement tersebut.
+
+    
+    // TODO 3: Atur isi teks dari elemen "statement" dengan value dari properti statement dari objek "fact"
+
+    // TODO 4: Deklarasikan fungsi disable dan enable untuk menyetel atau menghapus atribut "disabled" dari elemen tombol tertentu. Fungsi disable harus menyetel atribut "disabled" pada tombol ke nilai "", sedangkan fungsi enable harus menghapus atribut "disabled" dari elemen tombol.
+
+    // TODO 5: Deklarasikan fungsi bernama "isCorrect" yang membandingkan tebakan dengan jawaban. isCorrect(tebakan) harus mengembalikan "true" jika tebakannya sesuai jawaban pada objek "fact"
+    
+    // TODO 6A: Gunakan perulangan "for" untuk menambahkan .AddEventListener klik ke masing-masing "optionButtons".
+            // TODO 6B: Dalam fungsi event handler, tampilkan properti explanation dari objek "fact" dengan mengatur teks pada elemen "explanation".
+
+
+            // TODO 7: Dalam fungsi event handler -> gunakan perulangan untuk menonaktifkan semua tombol opsi. 
+
+
+            // TODO 8: Dalam fungsi event handler ->
+		            // a. Dapatkan nilai/value dari tombol yang diklik.
+		            // b. Gunakan conditional untuk membandingkan tebakan dengan jawaban.
+		            // c. Tambahkan pada properti class, "correct" atau "incorrect" sesuai jawaban yang dipilih.  
+        
+
+  </script>
+</html>
